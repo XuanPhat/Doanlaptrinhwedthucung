@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShop", "OnlineShop\OnlineShop.csproj", "{0B57E3FD-4D42-4E57-AC79-B70D94078A8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{B831F55E-B2DA-47A9-B87F-61EC397B0212}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{D36EFE8B-C2C0-42E7-BAFD-EEFA0230C1FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B57E3FD-4D42-4E57-AC79-B70D94078A8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B57E3FD-4D42-4E57-AC79-B70D94078A8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B57E3FD-4D42-4E57-AC79-B70D94078A8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B57E3FD-4D42-4E57-AC79-B70D94078A8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B831F55E-B2DA-47A9-B87F-61EC397B0212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B831F55E-B2DA-47A9-B87F-61EC397B0212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B831F55E-B2DA-47A9-B87F-61EC397B0212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B831F55E-B2DA-47A9-B87F-61EC397B0212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D36EFE8B-C2C0-42E7-BAFD-EEFA0230C1FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36EFE8B-C2C0-42E7-BAFD-EEFA0230C1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D36EFE8B-C2C0-42E7-BAFD-EEFA0230C1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36EFE8B-C2C0-42E7-BAFD-EEFA0230C1FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDB549CD-5C81-4F02-9D65-D8B452E17894}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,115 @@
+﻿@model List<OnlineShop.Models.CartItem>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/View.cshtml";
+}
+@section jsFooter{
+    <script src="/assets/client/js/controller/cartController.js"></script>
+
+
+
+}
+
+<div class="content">
+    <div class="session group">
+        @if (Model.Count > 0)
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>Mã SP</td>
+                        <td>Tên SP</td>
+                        <td>Ảnh SP</td>
+                        <td>Số lượng</td>
+                        <td>Đơn giá</td>
+                        <td>Thành tiền</td>
+
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Product.ID</td>
+                            <td>@item.Product.Name</td>
+                            <td><img src="@item.Product.Image" width="100"> </td>
+
+
+
+                            <td>
+                                <div>
+                                    <a href="@Url.Action("QtyMinus","Cart",new { id=item.Product.ID })">
+                                        <i class="fa fa-minus-circle"> </i>
+
+                                    </a>
+                                    @if (item.Product.Quantity < 0)
+                                    {
+                                        <script>
+                                            alert('Số lượng không thể nhỏ hơn 1');
+                                            window.history.back()
+                                        </script>
+
+                                    }
+                                    else
+                                    {
+                                        <input type="number" class="txtQuantity" data-id="@item.Product.ID" value="@item.Quantity" />
+                                    }
+
+
+                                    <a href="@Url.Action("QtyInc","Cart",new { id=item.Product.ID })">
+                                        <i class="fa fa-plus-circle"> </i>
+                                    </a>
+                                </div>
+
+                            </td>
+
+                            <td>@item.Product.Price.GetValueOrDefault(0).ToString("N0")</td>
+                            <td>@((item.Product.Price.GetValueOrDefault(0)*item.Quantity).ToString("N0"))</td>
+                            <td><a href="#" data-id="@item.Product.ID" class="btn-delete">Xóa</a> </td>
+
+
+
+                        </tr>
+                    }
+
+
+
+                    @*<tr>
+                            <td>Mã SP</td>
+                            <td>Tên SP</td>
+                            <td>Ản SP</td>
+                            <td>Số lượng</td>
+                            <td>Đơn giá</td>
+                            <td>Thành tiền</td>
+
+
+
+                        </tr>*@
+
+                </tbody>
+
+
+            </table>
+
+            <button id="btnContinue" class="btn"> Tiếp tục mua hàng </button>
+            <button id="btnUpdate" class="btn"> Cập nhập giỏ hàng </button>
+            <button id="btnDeleteAll" class="btn"> Xóa giỏ hàng</button>
+            <button id="btnPayment" class="btn"> Thanh toán </button>
+
+
+        }
+        else
+        {
+            <span class="alert alert-danger">Chưa có sản phẩm nào trong giỏ hàng</span>
+
+        }
+    </div>
+
+</div>
+
+
+
+
+

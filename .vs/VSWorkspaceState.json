@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\OnlineShop",
+    "\\OnlineShop\\Areas",
+    "\\OnlineShop\\Areas\\Admin",
+    "\\OnlineShop\\Areas\\Admin\\Models",
+    "\\OnlineShop\\Areas\\Admin\\Views",
+    "\\OnlineShop\\Areas\\Admin\\Views\\Login",
+    "\\OnlineShop\\Areas\\Admin\\Views\\Shared"
+  ],
+  "SelectedNode": "\\OnlineShop\\Areas\\Admin\\Views\\Login",
+  "PreviewInSolutionExplorer": false
+}

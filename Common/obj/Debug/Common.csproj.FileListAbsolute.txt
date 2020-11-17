@@ -1,0 +1,6 @@
+E:\C#\weddatabase\OnlineShop\Common\bin\Debug\Common.dll
+E:\C#\weddatabase\OnlineShop\Common\bin\Debug\Common.pdb
+E:\C#\weddatabase\OnlineShop\Common\obj\Debug\Common.csprojAssemblyReference.cache
+E:\C#\weddatabase\OnlineShop\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+E:\C#\weddatabase\OnlineShop\Common\obj\Debug\Common.dll
+E:\C#\weddatabase\OnlineShop\Common\obj\Debug\Common.pdb
